@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title> SRI VIDHYA COLLEGE </title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+	<link rel="stylesheet" href="/css/style.css">
+	<link rel="stylesheet" href="/css/responsive.css">
+	<link rel="stylesheet" href="/css/department.css">
+</head>
+
+<body>
+	<div class="top-header">
+		<div class="con">
+		<i class="fa-solid fa-envelope"></i><a href="mailto:svcasvnr@gmail.com">svcasvnr@gmail.com |</a> 
+		<i class="fa-solid fa-phone"></i><a href="tel:+91 7094465623">+91 7094465623 </a> 
+		</div>
+		<div class="reports">
+			<a href="/index.html"> Home |</a>
+			<a href="/html/skill_development.html">Skill Development |</a>
+			<a href="/php/feedback.php">FeedBack</a>
+		</div>
+	</div>
+	<!-- Navbar header section -->
+	<header class="header">
+		<nav class="navbar">
+			<div class="logo">
+				<img class="logo-img" src="/images/clglogo.png">
+				<h1 class="logo-heading"> ஸ்ரீ வித்யா கலை மற்றும் அறிவியல் கல்லூரி <br> SRI VIDHYA COLLEGE OF ARTS AND SCIENCE <br> &nbsp;&nbsp;&nbsp; (Affiliated to Madurai Kamaraj University)</h1>
+			</div>
+			<div class="hamburger" id="hamburger">
+				<i class="fas fa-bars hamburger-icon"></i>
+				<i class="fas fa-times cross-icon"></i>
+			</div>
+			<div class="menu">
+				<ul class="menu-list">
+					<li class="menu-list-items">
+						<a class="links" href="/html/departments.html">
+							Department
+						</a>  
+					</li>
+					<li class="menu-list-items">
+						<a class="links" href="/html/facilities.html">
+							Facilities
+						</a>  
+					</li>
+					<li class="menu-list-items">
+						<a class="links" href="/html/events.html">
+							Events
+						</a>  
+					</li>
+					<li class="menu-list-items">
+						<a class="links" href="/html/sports.html">
+							Sports
+						</a>  
+					</li>
+					<li class="menu-list-items">
+						<a class="links" href="http://localhost/app.php">
+							Application
+						</a>  
+					</li>
+					<li class="menu-list-items">
+						<a class="links" href="#contact">
+							Contact
+						</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+	</header>
+
+    <div class="info">
+        Our college provides lot of internship training opportunities for Students to develop their career skills and also helps them to place a job in an company.
+	</div>
+
+<section class="sec-main-content">
+    <div class="main-content">
+        <nav class="fac-types">
+            <h2 class="fac-heading">Departments</h2>
+            <ul class="fac-ul">
+                <li><a href="#cs-dept-para" id="cs-dept-anchor"> C.S. </a></li>
+                <li><a href="#bca-dept-para" id="bca-dept-anchor"> B.C.A. </a></li>
+                <li><a href="#bcom-dept-para" id="bcom-dept-anchor"> B.Com. </a></li>
+                <li><a href="#bcom-ca-dept-para" id="bcom-ca-dept-anchor">BCom (C.A.)</a></li>
+                <li><a href="#bcom-cs-dept-para" id="bcom-cs-dept-anchor">BCom (C.S.)</a></li>
+            </ul>
+        </nav>
+        
+		<article class="fac-details" id="cs-dept-para">
+            <div class="CS Dept">
+                <h2 class="dept-heading">Computer Science (CS)</h2>
+                <p class="dept-info">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2021-2024 Batch Students of Computer science department attended the internship training at Renga Technologies, Sattur.
+                </p>
+            </div>
+        </article>
+
+		<article class="fac-details" id="bca-dept-para">
+            <div class="BCA Dept">
+                <h2 class="dept-heading">Bachelor of Computer Applications (BCA)</h2>
+                <p class="dept-info">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2021-2024 Batch Students of Computer science department attended the internship training at Renga Technologies, Sattur.
+                </p>
+            </div>
+        </article>
+
+
+    </div>
+</section>
+
+
+
+
+<script>
+
+	
+document.addEventListener('DOMContentLoaded', function() {
+    hideAllArticles();
+});
+   
+    // Get all department links
+    const departmentLinks = document.querySelectorAll('.fac-ul a');
+
+    // Add event listener to each department link
+    departmentLinks.forEach(link => {
+        link.addEventListener('click', function(event) {
+            // Prevent default link behavior
+            event.preventDefault();
+
+            // Get the target article ID from the href attribute
+            const targetId = this.getAttribute('href').substring(1);
+
+            // Hide all department articles
+            const allArticles = document.querySelectorAll('.fac-details');
+            allArticles.forEach(article => {
+                article.classList.remove('active');
+            });
+
+            // Show the target department article
+            const targetArticle = document.getElementById(targetId);
+            targetArticle.classList.add('active');
+        });
+    });
+
+</script>
+
+</body>
+</html>

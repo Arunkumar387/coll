@@ -1,0 +1,41 @@
+body {
+    background-color: rgba(240, 255, 255, 0.336);
+}
+.fac-content {
+    margin-top : 5%;
+}
+.fac-types {
+    float: left;
+    background-color: #98f3f3;
+    padding: 3%;
+    margin: 5%;
+    border: 2px solid;
+    width: max-content;
+}
+.fac-types li {
+    list-style: none;
+    padding: 20px 5px 20px 5px;
+}
+.fac-types li a {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+} 
+.fac-details {
+    float: left;
+    background-color: #98f3f3;
+    padding: 3%;
+    margin: 2%;
+    margin-top: 5%;
+    border: 2px solid;
+    height: 100%;
+    width: 55%;
+}
+.classrooms-para {
+    font-size: larger;
+}
+#classroom-para {
+    display: none;
+}
+#lab-para {
+    display: none;
+}

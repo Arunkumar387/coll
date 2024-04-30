@@ -1,0 +1,122 @@
+body {
+    background-color: rgba(240, 255, 255, 0.336);
+}
+
+.main-content {
+    display: block;
+}
+h3,h4 {
+    display: block;
+    padding-top: 3%;
+    margin: 0;
+}
+.dept-heading {
+    text-align: center;
+    color :rgb(9, 119, 27);
+}
+.fac-content {
+    margin-top : 2%;
+}
+.fac-types {
+    background-color: #98f3f3;
+    padding-right: 5%;
+    margin: 2%;
+    margin-left: 0; 
+    margin-right: 0;
+    border: 2px solid;
+    width: 98%;
+}
+
+.fac-types ul {
+    display: inline;
+    margin-left: 7%;
+}
+
+.fac-types li {
+    display: inline-block;
+    list-style: none;
+    width: 5%;
+    padding: 1%;
+}
+.fac-types li a {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+    color :brown;
+    padding-left: 5%;
+} 
+.fac-details {
+    float: left;
+    background-color: #98f3f3;
+    padding: 3%;
+    margin: 2%;
+    margin-top: 5%;
+    margin-left: 1%;
+    border: 2px solid;
+    height: 100%;
+    width: 90%;
+}
+.hod-head {
+    text-align: center;
+    color: blueviolet;
+}
+.hod-info{
+    text-align: center;
+    border: 1px solid black;
+    width: fit-content;
+    margin-left: 38%;
+    padding: 3%;
+    padding-left: 0;
+    padding-right: 0;
+
+}
+.hod-info img {
+    height: 35%;
+    width : 35%;
+}
+.hod-info a, .staff-info a {
+    list-style: none;
+    color :rgb(253, 58, 32);
+    text-decoration: none;
+}
+
+.staff-head {
+    font-weight: bolder;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-top: 5%;
+    text-align: center;
+}
+.fac-images {
+    display : flex;
+    flex-wrap: wrap;
+}
+
+.fac-images .staff-info{
+    margin : 3%;
+    text-align: center;
+    padding: 2%;
+    padding-left: 0;
+    padding-right: 0;
+    border: 2px solid black;
+    height: 50%;
+    width: 25%;
+} 
+
+.fac-images .staff-info img {
+    height : 40%;
+    width : 30%;
+    padding: 0;
+    margin: 0;
+}
+.classrooms-para {
+    font-size: larger;
+}
+#classroom-para {
+    display: none;
+}
+#lab-para {
+    display: none;
+}
+
+.info {
+    border: 2px;
+}
